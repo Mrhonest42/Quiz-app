@@ -52,12 +52,14 @@ buttons.forEach(button => {
         // Disable buttons
         buttons.forEach(btn => btn.disabled = true);
         localStorage.setItem('page2Disabled', 'true');
-    });
-});
 
-// Check Answer button
+        // Check Answer button
 checkAnswer.addEventListener('click', () => {
     checkAnswer.innerHTML = 'Correct Answer';
     correctAnswer.innerHTML = 'Adeleide';
 });
+    });
+});
+
+
 

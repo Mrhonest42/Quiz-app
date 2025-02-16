@@ -7,7 +7,7 @@ const finalScore = localStorage.getItem('score');
 score.innerHTML = finalScore;
 
 document.getElementById("downloadBtn").addEventListener("click", function () {
-    let container = document.querySelector(".points-section"); 
+    let container = document.querySelector(".final-section"); 
     html2canvas(container).then((canvas) => {
         let link = document.createElement("a");
         link.href = canvas.toDataURL("image/png");
