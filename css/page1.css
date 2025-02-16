@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inspiration&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", serif;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #6ca4e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1200px;
+    height: 500px;
+    background-color: #fff;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+section .points-section{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 18px;
+    margin: 20px 0;
+}
+section .score-card{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.score-card p{
+    text-align: center;
+}
+.score-card .score-section{
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2px;
+    justify-content: space-evenly;
+}
+section #qtn{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+section .options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    margin: 10px 0;
+}
+section .options button{
+    padding: 15px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+section .options .one{
+    background-color: #ff00bb75;
+}
+section .options .two{
+    background-color: #76a5dc;
+}
+section .options .three{
+    background-color: #f88686;
+}
+section .options .four{
+    background-color:#10ac70;
+}
+section #answer{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+section .correct-answer{
+    display: flex;
+    justify-content: flex-start;
+}
+section .correct-answer .check-answer-button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20bf6b;
+}
+section .correct-answer p{
+    font-size: 16px;
+    font-weight: 600;
+    color:#ff009d;
+    margin: 12px 0 0 10px;
+}
+section .navigation-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+section .navigation-section a{
+    background-color: #20bf6b;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+section .navigation-section .page1{
+    background-color: #fff;
+}
+button:disabled{
+    background-color: #fff;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    section{
+        width: 250px;
+        height: 400px;
+        border-radius: 3px;
+        padding: 0 10px;
+    }
+    section .points-section{
+        width: 250px;
+        padding: 5px 0;
+        font-size: 10px;
+        margin: 6px 0;
+        align-items: center;
+    }
+    section .score-card{
+        width: 120px;
+        height: 35px;
+        gap: 3px;
+    }
+    .score-card .score-section{
+        width: 90px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    section h2{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    section #qtn{
+        font-size: 9px;
+        margin: 5px 0;
+    }
+    section .options{
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        margin: 5px 0;
+    }
+    section .options button{
+        padding: 6px 2px;
+        font-size: 8px;
+    }
+    section #answer{
+        font-size: 9px;
+        margin: 15px 0;
+    }
+    section .correct-answer .check-answer-button{
+        width: 100px;
+        height: 30px;
+        font-size: 9px;
+    }
+    section .correct-answer p{
+        font-size: 9px;
+        margin: 7px 0 0 10px;
+    }
+    section .navigation-section a{
+        padding: 6px 10px;
+        font-size: 9px;
+    }
+}

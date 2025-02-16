@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="flex">
+    <form action="page1.html" class="flex" id="form">
+        <h1>Register</h1>
+        <div class="name-field flex">
+            <label for="name">Enter your name:</label>
+            <input type="text" class="name" id="name">
+            <p id="empty-name"></p>
+        </div>
+        <div class="terms-and-conditions">
+            <ol class="rules">
+                <li class="points">
+                    You should register first with your email for our recording purpose. Then only you can attend this Quiz. 
+                </li>
+                <li class="points">
+                    You will have four options to answer the question. You need to pick a correct option. You cannot click more than one option. 
+                </li>
+                <li class="points">
+                    Click next question to move to next question. You are requested to answer all 20 questions.
+                </li>
+                <li class="points">At the end of 20th question, click 'Final Score' button to see your score</li>
+                <li class="points">
+                    This Quiz website is designed only to attain technical knowledge of web development. So, we assure that you there is no risk for you when you use our website. Also, your data will not be shared to anyone.
+                </li>
+                <li class="points">
+                    We given 20 questions about Cricket. Every question carries 5 marks. You can score upto 100 marks. We request you, be honest when you attend this Quiz. Remember! No one is going to be honored when scoring 100 out of 100. You are going to understand how much knowledge you have.
+                </li>
+            </ol>
+        </div>
+        <div class="agree-field">
+            <input type="checkbox" id="agree-button">
+            <label for="agree-button">I read above details and agree to the terms and conditions</label>
+        </div>
+        <div class="submit-button flex">
+            <button type="submit" id="submit">Register and Attend Quiz</button>
+        </div>
+    </form>
+    <script src="../javascript/index.js"></script>
+</body>
+</html>

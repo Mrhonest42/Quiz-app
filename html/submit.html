@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="../css/submit.css">
+</head>
+<body>
+    <section class="final-section">
+        <div class="points-section">
+            <h2>Congratulations! <span id="name"></span></h2>
+            <h4>you are scored</h4>
+            <h1 id="score"></h1>
+            <h4>points</h4>
+            <div class="share-buttons">
+                <button id="downloadBtn">Download Image</button>
+            </div>
+            <h2>Thank you for attending the Quiz!</h2>
+        </div>
+    </section>
+    <form id="feedback-form" action="https://formspree.io/f/meoerkoq" method="POST">
+        <div class="feedback-section">
+            <h2>Please give your feedback:</h2>
+            <label for="name">Enter your name:</label>
+            <input id="name" name="name" type="text" placeholder="Name" required>
+            <label for="email">Enter your email:</label>
+            <input id="email" name="email" type="email" placeholder="Email" required>
+            <label for="">Please share your experience:</label>
+            <textarea id="feedback" placeholder="Please share your thoughts positives or negatives, what should we improve..." cols="55" rows="5"></textarea>
+            <button type="submit"">SUBMIT</button>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="../javascript/submit.js"></script>
+</body>
+</html>
